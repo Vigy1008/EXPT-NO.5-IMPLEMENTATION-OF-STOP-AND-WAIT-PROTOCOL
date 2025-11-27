@@ -20,6 +20,7 @@ Step 13: In the definition of the finish procedure declare the global variables.
 Step 16: Stop the program.
  
 # PROGRAM
+```
 set ns [new Simulator]
 set namfile [open out.nam w]
 $ns namtrace-all $namfile proc finish {}
@@ -67,16 +68,9 @@ $ns at 3.1 "$ns trace-annotate \"FTP stops\""
 $ns at 0.0 "$n0 label Sender"
 $ns at 0.0 "$n1 label Receiver"
 $ns run
- 
+ ```
 # OUTPUT
-
-
-
-
-
-
-
-
+<img width="674" height="388" alt="image" src="https://github.com/user-attachments/assets/b0e00cdb-e210-4a9b-8aba-178762cceb99" />
 
 # RESULT
 Thus the Stop and Wait protocol is implemented using NS2 and the output is verified successfully.
